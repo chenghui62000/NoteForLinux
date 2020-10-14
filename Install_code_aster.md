@@ -1,6 +1,6 @@
 # How to install Code_Aster
 
-Most of the time, Code_Aster is installed with the series way. 
+**Note**: Most of the time, Code_Aster is installed with the series way on a computer. 
 
 ---
 
@@ -13,6 +13,7 @@ Unzip the package
 ```
 tar -xvf aster-xxxxx.tar.gz
 ```
+**NOTE**: according to my tests, Code_Aster 14.4 is quite unstable for Non-linear dynamic simulations. Thus, I recommond Code_Aster 14.2.
 
 ### 2. Install prerequiesites
 
@@ -23,17 +24,16 @@ sudo apt-get install gcc g++ gfortran cmake python3 python3-dev python3-numpy tk
 ### 3. Install the main program
    Then Install Code_Aster:	
    ``` shell
-   sudo python3 setup.py install --prefix=/opt/aster144
+   sudo python setup.py install --prefix=/opt/aster
    ```
 ### 4. Great alias command
  Add the following to the ~/.bashrc, so that you can enter the Code_Aster enviroment and run simulations easily. 
 
    ``` shell
-   alias aster144='source /opt/aster144/etc/codeaster/profile.sh'
+   alias aster='source /opt/aster/etc/codeaster/profile.sh'
    ```
 
 **Now, the installation for the series version is finished.**
-
 
 ---
 
@@ -44,6 +44,7 @@ Ref1: ([A Blog by a Jananese](https://hitoricae.com/2020/05/16/installation-code
 
 Ref2:([code_aster 14.4 parallel version with PETSc](https://hitoricae.com/2019/11/10/code_aster-14-4-with-petsc/))
 
+Ref3: ([parallel version based on CA14.2](https://code-aster.it/2019/01/12/code_aster-14-2-in-parallelo-su-ubuntu-bionic/))
 
 
 1. Install prerequisites
