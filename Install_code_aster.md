@@ -18,8 +18,14 @@ tar -xvf aster-xxxxx.tar.gz
 ### 2. Install prerequiesites
 
 ``` shell
-sudo apt-get install gcc g++ gfortran cmake python3 python3-dev python3-numpy tk tcl bison flex liblapack-dev libblas-dev libopenblas-dev libboost-python-dev libboost-numpy-dev zlib1g-dev nedit ddd
+sudo apt-get install gcc g++ gfortran cmake python3 python3-dev python3-numpy tk bison flex liblapack-dev libblas-dev libboost-python-dev libboost-numpy-dev zlib1g-dev xterm nedit ddd xemacs21 kwrite gedit gnome-terminal
 ```
+### 2.1 install python module
+We suggest install pip and pip3 first.
+```shell
+   pip install numpy setuptools matplotlib
+```
+**NOTE:** If it raise some problem about "blas", please make sure the ```libopenblas-base libopenblas-dev``` is not instlled with ```libblas-dev``` at the same time. 
 
 ### 3. Install the main program
    Then Install Code_Aster:	
@@ -34,6 +40,12 @@ sudo apt-get install gcc g++ gfortran cmake python3 python3-dev python3-numpy tk
    ```
 
 **Now, the installation for the series version is finished.**
+
+**NOTE:** you can test your installnation with the following command:
+```shell
+/opt/aster/bin/as_run --test sdnl142a
+```
+
 
 ---
 
