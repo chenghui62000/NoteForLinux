@@ -25,9 +25,7 @@
    sudo apt-get update
    sudo apt-get upgrade
    ```
-
    
-
 3. Check the video card
 
    Usually, no problems.
@@ -35,8 +33,7 @@
 4. Install small useful tools
 
    ```shell
-   sudo apt-get install tmux conky python3 kazam python3-numpy vim
-   
+   sudo apt-get install tmux conky python3 kazam python3-numpy vim git python-pip python3-pip python3-matplotlib
    ```  
 
    Some of the tools has to be installed manually.
@@ -58,8 +55,8 @@
    - paraview
    - [openfoam (6, 2006, 1906)](./Install_OpenFoam.md)
    - [code_aster](./Install_code_aster.md) 
-   - salome
-   - ligggths
+   - salome_meca (*note* if it can not open AsterStudy try to open salome_meca use the following comman and see the outcome in terminal:
+  ```sudo /opt/salome_meca/appli_V2019.0.3_universal/salome ``` )
 
 
 ## Useful tips 
